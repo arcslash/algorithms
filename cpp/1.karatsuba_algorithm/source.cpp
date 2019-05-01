@@ -28,9 +28,13 @@ int main(int argc, char *argv[]){
     return 0;
 }
 string add(string v1, string v2){
-    char ret[] = 'aa';
-    for(int i=0;i < max(v1.length(), v2.length());i++){       
-        ret[i] = atoi(v1[i]) + atoi(v2[i]);
+    int len_add = max(v1.length(), v2.length());
+    cout << "length:" << len_add << endl;
+    char ret[len_add + 1];
+    for(int i=0;i < len_add;i++){       
+        
+        cout <<"dd:" << (v1[i] - '0') +  (v2[i] - '0')<< endl;
+        //ret[i] = atoi((char*)v1[i]);
 
     }
     return ret;
